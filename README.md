@@ -5,7 +5,7 @@ This project aims to predict the likelihood of strokes in individuals using mach
 
 1. **_Milestone 1:_** **Data Preprocessing**  
 2. **_Milestone 2:_** **Data Visualization and Analysis**  
-3. **_Milestone 3:_** **Data Encoding **  
+3. **_Milestone 3:_** **Data Encoding**  
 4. **_Milestone 4:_** **Model Building, Evaluation, and Metric Calculation (Precision, Accuracy, F1-Score)**  
 
 ---
