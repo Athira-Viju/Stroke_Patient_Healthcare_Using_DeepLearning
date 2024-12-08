@@ -5,7 +5,7 @@ import streamlit as st
 import base64
 import os
 
-# This should be the first Streamlit command
+
 st.set_page_config(page_title="Stroke Prediction Using Deep Learning", layout="wide")
 
 # Ridge Regression class
@@ -33,7 +33,7 @@ class RidgeRegression:
         return np.dot(X, self.weights) + self.bias
 
 
-# Load the trained model
+
 @st.cache_resource
 def load_model():
     try:
@@ -51,10 +51,10 @@ def load_model():
         st.stop()
 
 
-# Load the model
+
 model = load_model()
 
-# Stroke Prediction heading (Center at the top, outside columns)
+
 st.markdown("<h1 style='font-family:Playfair Display; font-weight: normal; color: #7f8c8d; text-align: center;'>Stroke Prediction Web Application</h1>", unsafe_allow_html=True)
 st.markdown("<h3 style='font-family:Playfair Display; font-weight: normal; color: white; text-align: center; font-size: 15px; margin-top: -10px;'>Leverage Deep Learning to Predict Stroke Risk Based on Key Health Factors</h3>", unsafe_allow_html=True)
 
@@ -64,7 +64,7 @@ col1, col2 = st.columns([2.5, 2.5])  # Left column for image (3 parts), right co
 
 # Image column (left side)
 with col1:
-    # Set the image path (Replace with your image location)
+   
     img_path = r"C:\Users\arath\Stroke\stroke5.jpg"
     if os.path.exists(img_path):
         with open(img_path, "rb") as file:
